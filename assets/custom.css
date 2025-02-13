@@ -1,1 +1,6 @@
 /* Place custom css here. */
+.active {
+    font-weight: bold;
+    color: #ff6600; /* Example color for active link */
+    border-bottom: 2px solid #ff6600; /* Example underline for active link */
+  }

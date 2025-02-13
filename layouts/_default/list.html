@@ -19,7 +19,7 @@
 {{ if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) }}<!---->
 
 {{ $avatar_url := $.Scratch.Get "avatar_url" }}<!---->
-{{ if or $avatar_url site.Params.name }}
+{{ if or $avatar_url site.Params.name site.Params.bio }}
 <div class="-mt-2 mb-12 flex items-center">
   {{ if $avatar_url }}
   <div
@@ -32,7 +32,7 @@
     />
   </div>
   {{ end }}<!---->
-  {{ if site.Params.name }}
+  {{ if or site.Params.name site.Params.bio }}
   <div>
     <div class="mb-1 mt-3 text-2xl font-medium text-black dark:text-white">
       {{ site.Params.name }}
