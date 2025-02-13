@@ -1,6 +1,53 @@
 /* Place custom css here. */
+
+.not-prose h1 {
+  font-size: 2rem !important;
+}
+
+.not-prose h2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.not-prose p {
+  margin-top: 0px !important;
+}
+
+.not-prose a {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+.summary::marker {
+  display: none;
+  content: '';
+}
+
+.summary h1 {
+  cursor: pointer;
+}
+
 .active {
-    font-weight: bold;
-    color: #ff6600; /* Example color for active link */
-    border-bottom: 2px solid #ff6600; /* Example underline for active link */
-  }
+  color: #ff6600; /* Example color for active link */
+}
+
+.sidebar h3 {
+  margin-top: 0px !important;
+  text-transform: uppercase !important;
+  font-size: 1rem !important;
+}
+
+.sidebar ul {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+  font-size: 0.75rem !important;
+}
+
+.sidebar ul li {
+  padding: 0.1rem 0.2rem;
+}
+
+.sidebar ul li:nth-child(odd) {
+  /* Style for odd list items */
+  background-color: #ff660044; /* Example color for odd items */
+}
