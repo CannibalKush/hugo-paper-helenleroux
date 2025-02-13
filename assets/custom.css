@@ -1,5 +1,14 @@
 /* Place custom css here. */
 
+body {
+  width: 100vw; /* Ensures the body stays the same width, ignoring the scrollbar */
+  overflow-x: hidden;
+}
+
+.mb-14 {
+  margin-bottom: 0rem !important;
+}
+
 .not-prose h1 {
   font-size: 2rem !important;
 }
