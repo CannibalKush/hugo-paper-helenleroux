@@ -24,7 +24,7 @@ body {
 
 .not-prose a {
   text-decoration: underline;
-  color: #ff6600;
+  color: #ffbd59;
 }
 
 .summary::marker {
@@ -37,7 +37,7 @@ body {
 }
 
 .active {
-  color: #ff6600; /* Example color for active link */
+  color: #ffbd59; /* Example color for active link */
 }
 
 .sidebar h3 {
@@ -59,4 +59,8 @@ body {
 .sidebar ul li:nth-child(odd) {
   /* Style for odd list items */
   background-color: #ff660044; /* Example color for odd items */
+}
+
+.imfell {
+  font-family: 'IM Fell English';
 }
