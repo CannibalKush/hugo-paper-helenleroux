@@ -1,8 +1,9 @@
 {{ define "main" }}
 
 <article class="not-prose -mt-4">
+  <div class="imfell mb-4 mt-5 flex items-center justify-center text-8xl italic text-[#ffbd59]">Contact</div>
   <!-- Right column - about 2/3 width on medium screens and up -->
-  {{ .Content }}
+  <div class="imfell text-md">{{ .Content }}</div>
 
   <!-- Post Tags -->
   {{ if .Params.tags }}

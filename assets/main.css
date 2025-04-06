@@ -1175,10 +1175,6 @@ pre {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.collapse {
-  visibility: collapse;
-}
-
 .fixed {
   position: fixed;
 }
@@ -1250,11 +1246,6 @@ pre {
   margin-bottom: 2.5rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -1279,12 +1270,16 @@ pre {
   margin-bottom: 3.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .ml-auto {
@@ -1293,6 +1288,10 @@ pre {
 
 .mr-auto {
   margin-right: auto;
+}
+
+.ms-24 {
+  margin-inline-start: 6rem;
 }
 
 .mt-1 {
@@ -1307,6 +1306,10 @@ pre {
   margin-top: 3.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -1319,24 +1322,8 @@ pre {
   margin-top: 1rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.ms-16 {
-  margin-inline-start: 4rem;
-}
-
-.ms-24 {
-  margin-inline-start: 6rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -1349,6 +1336,11 @@ pre {
 
 .flex {
   display: flex;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
 }
 
 .h-24 {
@@ -1395,8 +1387,16 @@ pre {
   max-width: 36rem;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .-translate-y-\[1px\] {
@@ -1412,10 +1412,6 @@ pre {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .flex-col {
@@ -1442,20 +1438,16 @@ pre {
   justify-content: space-between;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2\.5 {
   gap: 0.625rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-32 {
-  gap: 8rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1470,6 +1462,10 @@ pre {
 
 .break-words {
   overflow-wrap: break-word;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -1509,29 +1505,30 @@ pre {
   background-color: rgb(0 0 0 / 0.05) !important;
 }
 
-.bg-black\/\[3\%\] {
-  background-color: rgb(0 0 0 / 3%);
+.bg-\[\#5271ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 113 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-blue-600 {
+.bg-\[\#f5f7ff\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+  background-color: rgb(245 247 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black\/\[3\%\] {
+  background-color: rgb(0 0 0 / 3%);
 }
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.fill-\[\#5271ff\] {
-  fill: #5271ff;
-}
-
-.stroke-\[\#5271ff\] {
-  stroke: #5271ff;
-}
-
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-8 {
@@ -1593,9 +1590,23 @@ pre {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-\[0\.9em\] {
+  font-size: 0.9em;
 }
 
 .text-\[0\] {
@@ -1620,37 +1631,6 @@ pre {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
-.text-\[0\.5em\] {
-  font-size: 0.5em;
-}
-
-.text-\[1em\] {
-  font-size: 1em;
-}
-
-.text-\[0\.8em\] {
-  font-size: 0.8em;
-}
-
-.text-\[0\.9em\] {
-  font-size: 0.9em;
 }
 
 .font-bold {
@@ -1780,7 +1760,7 @@ pre {
 }
 
 .nav-wrapper {
-  background: var(--bg);
+  /* background: var(--bg); */
 }
 
 .open {
@@ -1803,6 +1783,7 @@ pre {
 
 .open .nav-wrapper {
   top: 0px;
+  background:#fcfcfcf1;
 }
 
 article {
@@ -2086,20 +2067,10 @@ article .highlight {
     justify-content: center;
   }
 
-  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:\!bg-transparent {
-    background-color: transparent !important;
   }
 
   .lg\:pb-0 {
@@ -2109,11 +2080,6 @@ article .highlight {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:text-xl {
