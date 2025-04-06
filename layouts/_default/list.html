@@ -9,21 +9,12 @@
 {{ $pages := union .RegularPages .Sections }}<!---->
 {{ if .IsHome }}<!---->
 {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
-{{ end }}
-
-<!-- Articles -->
-{{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages
-}}<!---->
-
-<!-- avatar -->
-{{ if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) }}<!---->
-
-{{ $avatar_url := $.Scratch.Get "avatar_url" }}<!---->
+{{ end }} {{ $avatar_url := $.Scratch.Get "avatar_url" }}<!---->
 {{ if or $avatar_url site.Params.name site.Params.bio }}
-<div class="-mt-2 mb-12 flex items-center">
-  {{ if $avatar_url }}
+<div class="-mt-2 mb-6 flex items-center justify-center">
+  {{/* {{ if $avatar_url }}
   <div
-    class="ltr:-ml-1 rtl:-mr-1 ltr:mr-5 rtl:ml-5 h-24 w-24 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 dark:!bg-white/90"
+    class="h-24 w-24 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 dark:!bg-white/90 ltr:-ml-1 ltr:mr-5 rtl:-mr-1 rtl:ml-5"
   >
     <img
       class="my-0 h-full w-full rounded-full !bg-black/5 dark:!bg-black/80"
@@ -32,7 +23,7 @@
     />
   </div>
   {{ end }}<!---->
-  {{ if or site.Params.name site.Params.bio }}
+  */}} {{/* {{ if or site.Params.name site.Params.bio }}
   <div>
     <div class="mb-1 mt-3 text-2xl font-medium text-black dark:text-white">
       {{ site.Params.name }}
@@ -42,38 +33,48 @@
       site.Params.name) }}
     </div>
   </div>
-  {{ end }}
+  {{ end }} */}}
+  <div class="imfell text-3xl text-[#5271ff]">Hi there</div>
 </div>
-{{ end }}<!---->
-
-{{ end }}
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0 hover:underline">
-  {{ if gt .Weight 0 }}
-  <span class="mb-1 inline-block text-xs tracking-wider text-orange-500"
-    >Featured</span
-  >
-  {{ end }}
-  <h2 class="!my-0">{{ .Title }}</h2>
-  <time class="text-xs antialiased opacity-60"
-    >{{ .Date | time.Format ":date_medium" }}</time
-  >
-  <a class="absolute inset-0 text-[0]" href="{{ .Permalink }}">{{ .Title }}</a>
-</section>
-{{ end }}
-
-<!-- Main Nav -->
-{{ if gt $paginator.TotalPages 1 }}
-<nav class="mt-14 flex">
-  {{ if $paginator.HasPrev }}
-  <a class="btn" href="{{ $paginator.Prev.URL }}">← {{ i18n "prev_page" }}</a>
-  {{ end }}<!---->
-  {{ if $paginator.HasNext }}
-  <a class="btn ml-auto" href="{{ $paginator.Next.URL }}"
-    >{{ i18n "next_page" }} →</a
-  >
-  {{ end }}
-</nav>
+<div
+  class="imfell mb-12 mt-12 flex items-center justify-center text-8xl italic text-[#ffbd59]"
+>
+  <div>I'm Helen le Roux</div>
+</div>
+<div class="flex items-center justify-center">
+  <div class="imfell text-3xl text-[#5271ff]">
+    A freelance creative and aspiring writer
+  </div>
+</div>
+<div class="imfell mt-24 flex justify-between gap-16 text-[0.9em]">
+  <div class="flex flex-col">
+    <div>
+      “Helen was a dream to work with! I wrote a short story and her
+      developmental edits and final proofreading notes were instrumental to the
+      story finding its final shape. Her creative thinking helped me fine tune
+      the themes of the story, and her criticism was always friendly and
+      encouraging. I look forward to working with her on creative projects in
+      future.”
+    </div>
+    <div class="ms-24 mt-4 text-[#5271ff]">
+      -Kate Southwood, multimedia production specialist
+    </div>
+  </div>
+  <div class="flex flex-col">
+    <div>
+      “It was an absolute pleasure working with Helen at Electric Book Works.
+      She's thoughtful and meticulous, and her endless curiosity is invaluable,
+      especially in publishing where we work on such a wide range of topics.
+      She's also the editor of my podcast, How Books Are Made, where she has a
+      gift for knitting a flowing, natural-sounding story from very raw
+      material. I can highly recommend bringing her in on your publishing
+      projects.”
+    </div>
+    <div class="ms-24 mt-4 text-[#5271ff]">
+      -Arthur Attwell, director at Electric Book Works
+    </div>
+  </div>
+</div>
 {{ end }}<!---->
 
 {{ end }}

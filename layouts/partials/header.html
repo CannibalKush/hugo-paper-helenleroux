@@ -57,11 +57,11 @@
     class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none">
     {{ $url := .RelPermalink }}<!---->
     {{ with site.Menus.main }}
-    <nav class="imfell lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse text-[#5271ff]">
-      <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal {{ if $.Page.IsHome }} active{{ end }}"
+    <nav class="imfell lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-20 rtl:space-x-reverse text-[#5271ff] uppercase">
+      <a class="block text-center leading-[5rem] lg:text-xl lg:font-normal {{ if $.Page.IsHome }} active{{ end }}"
       href="{{ `` | absURL }}">Home</a>
       {{ range . }}
-      <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal {{ if eq $.RelPermalink .URL }}active{{ end }}"
+      <a class="block text-center text-xl leading-[5rem] lg:text-xl lg:font-normal {{ if eq $.RelPermalink .URL }}active{{ end }}"
         href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
     </nav>
