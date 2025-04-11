@@ -3,6 +3,11 @@
 body {
   width: 100vw; /* Ensures the body stays the same width, ignoring the scrollbar */
   overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;     /* For WebKit-based browsers */
+  -moz-osx-font-smoothing: grayscale;      /* For macOS Firefox */
+  text-rendering: optimizeLegibility;      /* Enables kerning & ligatures */
+  
 }
 
 .mb-14 {
