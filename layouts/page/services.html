@@ -17,34 +17,60 @@
     <div class="imfell text-center text-3xl text-[#5271ff]">
       I offer freelancing services in the publishing field
     </div>
-    <div class="flex size-full md:flex-row gap-8 flex-col">
+    <div class="flex size-full flex-col gap-8 md:flex-row">
       <div class="flex flex-1 flex-col">
-        <div class="imfell text-2xl text-[#5271ff] mb-2">Digitising</div>
-        <div class="imfell grow rounded-2xl bg-[#f5f7ff] p-4 text-sm flex items-center">
-            <div>{{ with .Params.content1}} {{ . | markdownify }} {{ end }}</div>
+        <div class="imfell mb-2 text-2xl text-[#5271ff]">Digitising</div>
+        <div
+          class="imfell flex grow items-center rounded-2xl bg-[#f5f7ff] p-4 text-sm"
+        >
+          <div>{{ with .Params.content1}} {{ . | markdownify }} {{ end }}</div>
         </div>
       </div>
       <div class="flex flex-1 flex-col">
-        <div class="imfell text-2xl text-[#5271ff] mb-2">Artwork creation</div>
-        <div class="imfell grow rounded-2xl bg-[#f5f7ff] p-4 text-sm flex items-center">
-            <div>{{ with .Params.content2}} {{ . | markdownify }} {{ end }}</div>
+        <div class="imfell mb-2 text-2xl text-[#5271ff]">Artwork creation</div>
+        <div
+          class="imfell flex grow items-center rounded-2xl bg-[#f5f7ff] p-4 text-sm"
+        >
+          <div>{{ with .Params.content2}} {{ . | markdownify }} {{ end }}</div>
         </div>
       </div>
     </div>
-    <div class="flex size-full md:flex-row gap-8 flex-col">
-        <div class="flex flex-1 flex-col">
-          <div class="imfell text-2xl text-[#5271ff] mb-2">Front end testing</div>
-          <div class="imfell grow rounded-2xl bg-[#f5f7ff] p-4 text-sm flex items-center">
-            <div>{{ with .Params.content3}} {{ . | markdownify }} {{ end }}</div>
-          </div>
-        </div>
-        <div class="flex flex-1 flex-col">
-          <div class="imfell text-2xl text-[#5271ff] mb-2">Proofreading</div>
-          <div class="imfell grow rounded-2xl bg-[#f5f7ff] p-4 text-sm flex items-center">
-            <div>{{ with .Params.content4}} {{ . | markdownify }} {{ end }}</div>
-          </div>
+    <div class="flex size-full flex-col gap-8 md:flex-row">
+      <div class="flex flex-1 flex-col">
+        <div class="imfell mb-2 text-2xl text-[#5271ff]">Front-end testing</div>
+        <div
+          class="imfell flex grow items-center rounded-2xl bg-[#f5f7ff] p-4 text-sm"
+        >
+          <div>{{ with .Params.content3}} {{ . | markdownify }} {{ end }}</div>
         </div>
       </div>
+      <div class="flex flex-1 flex-col">
+        <div class="imfell mb-2 text-2xl text-[#5271ff]">Proofreading</div>
+        <div
+          class="imfell flex grow items-center rounded-2xl bg-[#f5f7ff] p-4 text-sm"
+        >
+          <div>{{ with .Params.content4}} {{ . | markdownify }} {{ end }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex size-full flex-col gap-8 md:flex-row">
+      <div class="flex flex-1 flex-col">
+        <div class="imfell mb-2 text-2xl text-[#5271ff]">Podcasts</div>
+        <div
+          class="imfell flex grow items-center rounded-2xl bg-[#f5f7ff] p-4 text-sm"
+        >
+          <div>{{ with .Params.content5}} {{ . | markdownify }} {{ end }}</div>
+        </div>
+      </div>
+      <div class="flex flex-1 flex-col">
+        <div class="imfell mb-2 text-2xl text-[#5271ff]">Copywriting</div>
+        <div
+          class="imfell flex grow items-center rounded-2xl bg-[#f5f7ff] p-4 text-sm"
+        >
+          <div>{{ with .Params.content6}} {{ . | markdownify }} {{ end }}</div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Post Tags -->
